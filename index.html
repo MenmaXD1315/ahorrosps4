@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ahorros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- GIF de Goku -->
+        <div class="gif-container">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmhwdHQxNndiMDc1N2MyMWh1NGRxdmNjeG4xejlwMWdwemg0YmFsdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/88kDwXuvzdwHK/giphy.gif" alt="Goku gif">
+        </div>
+        
+        <!-- Título -->
+        <header>
+            <h1>Calculadora de Ahorros</h1>
+        </header>
+        
+        <!-- Sección de Ahorros -->
+        <section class="ahorros">
+            <label for="ahorro-dia">Introduce el ahorro del día:</label>
+            <input type="number" id="ahorro-dia" placeholder="Monto en $">
+            <button id="agregar-ahorro">Agregar Ahorro</button>
+        </section>
+
+        <!-- Totales -->
+        <section class="totales">
+            <div>
+                <h2>Total Semana</h2>
+                <p id="total-semana">$0</p>
+            </div>
+            <div>
+                <h2>Total Mes</h2>
+                <p id="total-mes">$0</p>
+            </div>
+        </section>
+
+        <!-- Historial de Ahorros -->
+        <section class="historial">
+            <h2>Historial de Ahorros</h2>
+            <ul id="historial-lista"></ul>
+        </section>
+
+        <!-- Botón de Finalizar Semana -->
+        <button id="finalizar-semana">Finalizar Semana</button>
+
+        <!-- Contador de semanas y meses -->
+        <div class="contador">
+            <p id="contador-semanas">Semanas Ahorrando: 0</p>
+            <p id="contador-meses">Meses Ahorrando: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

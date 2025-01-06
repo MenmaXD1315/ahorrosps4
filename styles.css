@@ -1,0 +1,149 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #FF8C00, #003366); /* Fondo de naranja y azul oscuro */
+    color: #333;
+    text-align: center;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del GIF de Goku */
+.gif-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gif-container img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Encabezado */
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Sección de Ahorros */
+.ahorros {
+    margin-bottom: 20px;
+}
+
+.ahorros input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ahorros button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ahorros button:hover {
+    background-color: #45a049;
+}
+
+/* Sección de Totales */
+.totales {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.totales div {
+    text-align: center;
+}
+
+.totales h2 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.totales p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF8C00; /* Naranja */
+}
+
+/* Historial de Ahorros */
+.historial {
+    margin-bottom: 20px;
+}
+
+.historial ul {
+    list-style-type: none;
+}
+
+.historial li {
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* Contador de Semanas y Meses */
+.contador {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contador p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* Estilos para Pantallas Pequeñas (Responsive) */
+@media (max-width: 600px) {
+    .totales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .totales div {
+        margin-bottom: 20px;
+    }
+
+    .ahorros input {
+        width: 70%;
+    }
+
+    .ahorros button {
+        width: 70%;
+    }
+}
